@@ -4,7 +4,9 @@
 #define TRUE        1
 #define FALSE       0
 
-typedef int Data;
+#include "BinaryTree2.h"
+
+typedef BTreeNode * Data;
 
 typedef struct _node {
     Data data;
@@ -17,11 +19,11 @@ typedef struct _listStack {
 
 typedef ListStack Stack;
 
-void StackInit(Stack * pstack);             // ½ºÅÃÀÇ ÃÊ±âÈ­
-int SIsEmpty(Stack * pstack);               // ½ºÅÃÀÌ ºñ¾ú´ÂÁö È®ÀÎ
+void StackInit(Stack * pstack);             // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+int SIsEmpty(Stack * pstack);               // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 
-void SPush(Stack * pstack, Data data);      // ½ºÅÃÀÇ push ¿¬»ê
-Data SPop(Stack * pstack);                  // ½ºÅÃÀÇ pop ¿¬»ê
+void SPush(Stack * pstack, Data data);      // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ push ï¿½ï¿½ï¿½ï¿½
+Data SPop(Stack * pstack);                  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ pop ï¿½ï¿½ï¿½ï¿½
 Data SPeek(Stack * pstack);   
 
 #endif
